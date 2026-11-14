@@ -8,6 +8,7 @@ Each episode follows the same pattern: build a real workflow, try to break it wi
 |---|---|---|
 | [ep01-receipt-agent](ep01-receipt-agent) | Drop a receipt photo in OneDrive, get an Excel row and a Teams ping when something's off | Category, one-line description, whether to alert |
 | [ep02-invoice-vs-po](ep02-invoice-vs-po) | Invoice vs purchase order checker. Clean invoices never reach the agent | Explain exceptions only |
+| [ep03-inbox-triage](ep03-inbox-triage) | Customer emails labelled twice, by a fixed Extract step and by an agent, side by side in Excel | Category plus a one-sentence reason |
 | [ep04-contract-clause-checker](ep04-contract-clause-checker) | Reads every page of a supplier contract, schedules included, and flags risky clauses | Risk level, risky clauses, summary, next step |
 | [patterns-expense-review-agent](patterns-expense-review-agent) | An expense policy agent with an 8-question evaluation gate, plus a workflow where the agent proposes a change and a person approves it | Answer from the policy, refuse exceptions, propose but never commit |
 
@@ -16,7 +17,7 @@ Each episode follows the same pattern: build a real workflow, try to break it wi
 - A Power Platform environment with Dataverse, where you can create solutions. Use a dev or sandbox environment, not production.
 - Copilot Studio with **Workflows** available in that environment. Workflows, the Agent step and Extract are new, so check they show up in your tenant before importing.
 - Copilot Credits. I used pay-as-you-go billing at $0.01 a credit.
-- Connections for OneDrive for Business, Excel Online (Business) and Microsoft Teams.
+- Connections for OneDrive for Business, Office 365 Outlook, Excel Online (Business) and Microsoft Teams.
 
 ## Importing a solution
 
@@ -37,4 +38,4 @@ All the solutions are unmanaged, so you can change anything.
 
 MIT. Use it, change it, break it. If you find a better way to do something, open an issue.
 
-The test receipts, invoices and contracts are made up. Any resemblance to a real business is a coincidence.
+The test receipts, invoices, emails and contracts are made up. Any resemblance to a real business is a coincidence.
